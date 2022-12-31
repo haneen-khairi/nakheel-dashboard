@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Meta -->
+	<meta name="description" content="Responsive Bootstrap4 Dashboard Template">
+	<meta name="author" content="ParkerThemes">
+	<link rel="shortcut icon" href="img/fav1.ico" />
+
+	<!-- Title -->
+	<title>Royal Commission for Alula Dashboard</title>
+
+
+	<!-- *************
+			************ Common Css Files *************
+		************ -->
+	<!-- Bootstrap css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Icomoon Font Icons css -->
+	<link rel="stylesheet" href="fonts/style.css">
+
+	<!-- Main css -->
+	<link rel="stylesheet" href="css/main.css">
+
+
+	<!-- *************
+			************ Vendor Css Files *************
+		************ -->
+	<!-- DateRange css -->
+	<link rel="stylesheet" href="vendor/daterange/daterange.css" />
+
+	<!-- Chartist css -->
+	<link rel="stylesheet" href="vendor/chartist/css/chartist.min.css" />
+	<link rel="stylesheet" href="vendor/chartist/css/chartist-custom.css" />
+
+</head>
+
+<body>
+
+	<!-- Loading starts -->
+	<div id="loading-wrapper">
+		<div class="spinner-border" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	<!-- Loading ends -->
+
+
+	<!-- Page wrapper start -->
+	<div class="page-wrapper">
+
+		<!-- Sidebar wrapper start -->
+		<nav id="sidebar" class="sidebar-wrapper">
+			<!-- Sidebar brand start  -->
+			<div class="sidebar-brand">
+				<a href="index.html" class="logo">
+					<img src="img/logo1.png" alt="Wafi Admin Dashboard" />
+				</a>
+				<a href="index.html" class="logo-sm">
+					<img src="img/logo-sm.png" alt="Wafi Admin Dashboard" />
+				</a>
+			</div>
+			<!-- Sidebar brand end  -->
+
+			<!-- Sidebar content start -->
+			<div class="sidebar-content">
+
+				<!-- sidebar menu start -->
+				<div class="sidebar-menu">
+					<ul>
+						<li class="header-menu">General</li>
+						<li class="sidebar-dropdown active">
+							<a href="#">
+								<i class="icon-devices_other"></i>
+								<span class="menu-text">Dashboards</span>
+							</a>
+							<div class="sidebar-submenu">
+								<ul>
+									<li>
+										<a href="index.html" class="current-page"> تحليلات المشروع الكلي</a>
+									</li>
+									<li>
+										<a href="main-analysis.html">تحليلات العاملين</a>
+									</li>
+									<li>
+										<a href="suppervisor-analysis.html">تحليلات المسؤولين</a>
+									</li>
+									<li>
+										<a href="qa-analysis.html">تحليلات التقييم </a>
+									</li> 
+								</ul>
+							</div>
+						</li>
+						<li class="sidebar-dropdown">
+							<a href="#">
+								<i class="icon-check-circle"></i>
+								<span class="menu-text">Supervisor</span>
+							</a>
+							<div class="sidebar-submenu">
+								<ul>
+									<li>
+										<a href="account-settings.html">Account Settings</a>
+									</li>
+									<li class=" ">
+										<a href="#">
+											<i class="icon-check-circle"></i>
+											<span class="menu-text">المهام</span>
+										</a>
+										<div class="sidebar-submenu">
+											<ul>
+												<li>
+													<a href="datepickers.html"> الري </a>
+												</li>
+												<li>
+													<a href="datepickers.html"> الرعاية </a>
+												</li> 
+											</ul>
+										</div>
+									</li>
+									<li class=" ">
+										<a href="#">
+											<i class="icon-check-circle"></i>
+											<span class="menu-text">الشكاوي والتقارير</span>
+										</a>
+										<div class="sidebar-submenu">
+											<ul>
+												<li>
+													<a href="datepickers.html"> الشكاوي </a>
+												</li>
+												<li>
+													<a href="datepickers.html"> التقارير </a>
+												</li> 
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="datepickers.html">عرض الموارد</a>
+									</li> 
+									<li>
+										<a href="datepickers.html">قاعدة البيانات</a>
+									</li> 
+								</ul>
+							</div>
+						</li>
+						<li class="sidebar-dropdown">
+							<a href="#">
+								<i class="icon-book-open"></i>
+								<span class="menu-text">Quality controller</span>
+							</a>
+							<div class="sidebar-submenu">
+								<ul> 
+									<div class="sidebar-submenu">
+										<ul>
+											<li>
+												<a href="datepickers.html">مهام الري</a>
+											</li>
+											<li>
+												<a href="datepickers.html"> مهام الرعاية </a>
+											</li>
+											<li>
+												<a href="datepickers.html"> مهام التقييم </a>
+											</li> 
+											<li>
+												<a href="datepickers.html"> مهام اخرى</a>
+											</li>  
+										</ul>
+									</div>
+								</ul>
+							</div>
+						</li> 
+					</ul>
+				</div>
+				<!-- sidebar menu end -->
+
+			</div>
+			<!-- Sidebar content end -->
+		</nav>
+		<!-- Sidebar wrapper end -->
+
+		<!-- Page content start  -->
+		<div class="page-content">
+
+			<!-- Header start -->
+			<header class="header">
+				<div class="toggle-btns">
+					<a id="toggle-sidebar" href="#">
+						<i class="icon-list"></i>
+					</a>
+					<a id="pin-sidebar" href="#">
+						<i class="icon-list"></i>
+					</a>
+				</div>
+				<div class="header-items">
+					<!-- Custom search start -->
+					<div class="custom-search">
+						<input type="text" class="search-query" placeholder="Search here ...">
+						<i class="icon-search1"></i>
+					</div>
+					<!-- Custom search end -->
+
+					<!-- Header actions start -->
+					<ul class="header-actions">
+						<li class="dropdown">
+							<a href="#" id="notifications" data-toggle="dropdown" aria-haspopup="true">
+								<i class="icon-box"></i>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right lrg" aria-labelledby="notifications">
+								<div class="dropdown-menu-header">
+									Tasks (05)
+								</div>
+								<ul class="header-tasks">
+									<li>
+										<p>#48 - Dashboard UI<span>90%</span></p>
+										<div class="progress">
+											<div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90"
+												aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+												<span class="sr-only">90% Complete (success)</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<p>#95 - Alignment Fix<span>60%</span></p>
+										<div class="progress">
+											<div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60"
+												aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+												<span class="sr-only">60% Complete (success)</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<p>#7 - Broken Button<span>40%</span></p>
+										<div class="progress">
+											<div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="40"
+												aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+												<span class="sr-only">40% Complete (success)</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" id="notifications" data-toggle="dropdown" aria-haspopup="true">
+								<i class="icon-bell"></i>
+								<span class="count-label">8</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right lrg" aria-labelledby="notifications">
+								<div class="dropdown-menu-header">
+									Notifications (40)
+								</div>
+								<ul class="header-notifications">
+									<li>
+										<a href="#">
+											<div class="user-img away">
+												<img src="img/user21.png" alt="User">
+											</div>
+											<div class="details">
+												<div class="user-title">Abbott</div>
+												<div class="noti-details">Membership has been ended.</div>
+												<div class="noti-date">Oct 20, 07:30 pm</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="user-img busy">
+												<img src="img/user10.png" alt="User">
+											</div>
+											<div class="details">
+												<div class="user-title">Braxten</div>
+												<div class="noti-details">Approved new design.</div>
+												<div class="noti-date">Oct 10, 12:00 am</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="user-img online">
+												<img src="img/user6.png" alt="User">
+											</div>
+											<div class="details">
+												<div class="user-title">Larkyn</div>
+												<div class="noti-details">Check out every table in detail.</div>
+												<div class="noti-date">Oct 15, 04:00 pm</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" id="userSettings" class="user-settings" data-toggle="dropdown"
+								aria-haspopup="true">
+								<span class="user-name"> السيد ايمن</span>
+								<span class="avatar">ايمن<span class="status busy"></span></span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userSettings">
+								<div class="header-profile-actions">
+									<div class="header-user-profile">
+										<div class="header-user">
+											<img src="img/user.png" alt="Admin Template">
+										</div>
+										<h5>ايمن  </h5>
+										<p>Admin</p>
+									</div>
+									<a href="user-profile.html"><i class="icon-user1"></i> My Profile</a>
+									<a href="account-settings.html"><i class="icon-settings1"></i> Account Settings</a>
+									<a href="login.html"><i class="icon-log-out1"></i> Sign Out</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- Header actions end -->
+				</div>
+			</header>
+			<!-- Header end -->
+
+			<!-- Page header start -->
+			<div class="page-header">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">Dashboards</li>
+					<li class="breadcrumb-item active">Admin Dashboard</li>
+				</ol>
+
+				<ul class="app-actions">
+					<li>
+						<a href="#" id="reportrange">
+							<span class="range-text"></span>
+							<i class="icon-chevron-down"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Print">
+							<i class="icon-print"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-toggle="tooltip" data-placement="top" title=""
+							data-original-title="Download CSV">
+							<i class="icon-cloud_download"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- Page header end -->
+
+
+			<!-- Main container start -->
+            <div class="main-container">
+                					<!-- Row starts -->
+					<div class="row gutters">
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-title">Tickets Status</div>
+								</div>
+								<div class="card-body">
+
+									<!-- Row starts -->
+									<div class="row gutters">
+										<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="ticket-status-card">
+												<h6>Unresolved</h6>
+												<h3>5290</h3>
+											</div>
+										</div>
+										<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="ticket-status-card">
+												<h6>Overdue</h6>
+												<h3>770</h3>
+											</div>
+										</div>
+										<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="ticket-status-card">
+												<h6>Due Today</h6>
+												<h3>25</h3>
+											</div>
+										</div>
+										<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="ticket-status-card">
+												<h6>Open</h6>
+												<h3>1800</h3>
+											</div>
+										</div>
+										<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="ticket-status-card">
+												<h6>On Hold</h6>
+												<h3>450</h3>
+											</div>
+										</div>
+										<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
+											<div class="ticket-status-card">
+												<h6>Unassigned</h6>
+												<h3>275</h3>
+											</div>
+										</div>
+									</div>
+									<!-- Row ends -->
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Row ends -->
+
+					<!-- Row starts -->
+					<div class="row gutters">
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-title">Tickets</div>
+								</div>
+								<div class="card-body">
+									<div class="custom-btn-group" role="group">
+										<button type="button" class="btn btn-outline-primary btn-sm btn-rounded">Today</button>
+										<button type="button" class="btn btn-outline-primary btn-sm btn-rounded">Yesterday</button>
+										<button type="button" class="btn btn-outline-primary btn-sm btn-rounded">Last Week</button>
+										<button type="button" class="btn btn-outline-secondary btn-sm btn-rounded">Month</button>
+									</div>
+									<div id="tickets"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Row ends -->
+
+					<!-- Row starts -->
+					<div class="row gutters">
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+							<div class="card h-250">
+								<div class="card-header">
+									<div class="card-title">Support Requests</div>
+								</div>
+								<div class="card-body pt-0">
+									<div id="support-requests"></div>
+									<p class="text-center">
+										<small class="text-success">*Received highest number of requests on Saturday.</small>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+							<div class="card h-250">
+								<div class="card-header">
+									<div class="card-title">Complaints</div>
+								</div>
+								<div class="card-body pt-0">
+									<div id="complaints"></div>
+									<p class="text-center">
+										<small class="text-danger">*Received highest number of complaints on Saturday.</small>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+							<div class="overview-box2 h-250">
+								<i class="icon-alarm_on"></i>
+								<h5>Time to resolve complaint</h5>
+								<h4>7m:30s</h4>
+								<p>(Goal: 7m:0s)</p>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+							<div class="overview-box2 orange h-250">
+								<i class="icon-av_timer"></i>
+								<h5>Average speed of answer</h5>
+								<h4>0m:15s</h4>
+							</div>
+						</div>
+					</div>
+					<!-- Row ends -->
+
+					<!-- Row starts -->
+					<div class="row gutters">
+						<div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="card h-320">
+								<div class="card-header">
+									<div class="card-title">Avg Cost Per Support</div>
+								</div>
+								<div class="card-body pt-0">
+									<div id="cost-per-support"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="card h-320">
+								<div class="card-header">
+									<div class="card-title">Traffic Analysis</div>
+								</div>
+								<div class="card-body">
+									<div id="traffic-analysis"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+							<div class="card h-320">
+								<div class="card-header">
+									<div class="card-title">Customer Ratings</div>
+								</div>
+								<div class="card-body pb-0">
+									<div class="user-ratings">
+										<div class="total-ratings">
+											<h2>5.0</h2>
+											<div class="rating-stars">
+												<div id="rate2"></div>
+											</div>
+										</div>
+										<div class="ratings-list-container">
+											<div class="ratings-list">
+												<div class="rating-level">5.0</div>
+												<div class="rating-stars">
+													<div class="rateA"></div>
+												</div>
+												<div class="total">
+													8,500 <span class="percentage">85%</span>
+												</div>
+											</div>
+											<div class="ratings-list">
+												<div class="rating-level">4.0</div>
+												<div class="rating-stars">
+													<div class="rateB"></div>
+												</div>
+												<div class="total">
+													1,000 <span class="percentage">10%</span>
+												</div>
+											</div>
+											<div class="ratings-list">
+												<div class="rating-level">3.0</div>
+												<div class="rating-stars">
+													<div class="rateC"></div>
+												</div>
+												<div class="total">
+													300 <span class="percentage">03%</span>
+												</div>
+											</div>
+											<div class="ratings-list">
+												<div class="rating-level">2.0</div>
+												<div class="rating-stars">
+													<div class="rateD"></div>
+												</div>
+												<div class="total">
+													200 <span class="percentage">02%</span>
+												</div>
+											</div>
+											<div class="ratings-list">
+												<div class="rating-level">1.0</div>
+												<div class="rating-stars">
+													<div class="rateE"></div>
+												</div>
+												<div class="total">
+													100 <span class="percentage">01%</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Row ends -->
+
+				</div>
+				<!-- Main container end -->
+
+			</div>
+			<!-- Page content end -->
+
+		</div>
+		<!-- Page wrapper end -->
+
+		<!--**************************
+			**************************
+				**************************
+							Required JavaScript Files
+				**************************
+			**************************
+		**************************-->
+		<!-- Required jQuery first, then Bootstrap Bundle JS -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/moment.js"></script>
+
+
+		<!-- *************
+			************ Vendor Js Files *************
+		************* -->
+		<!-- Slimscroll JS -->
+		<script src="vendor/slimscroll/slimscroll.min.js"></script>
+		<script src="vendor/slimscroll/custom-scrollbar.js"></script>
+
+		<!-- Daterange -->
+		<script src="vendor/daterange/daterange.js"></script>
+		<script src="vendor/daterange/custom-daterange.js"></script>
+
+		<!-- Apex Charts -->
+		<script src="vendor/apex/apexcharts.min.js"></script>
+		<script src="vendor/apex/helpdesk-dashboard/tickets.js"></script>
+		<script src="vendor/apex/helpdesk-dashboard/support-requests.js"></script>
+		<script src="vendor/apex/helpdesk-dashboard/complaints.js"></script>
+		<script src="vendor/apex/helpdesk-dashboard/traffic-analysis.js"></script>
+		<script src="vendor/apex/helpdesk-dashboard/cost-per-support.js"></script>
+
+		<!-- Rating JS -->
+		<script src="vendor/rating/raty.js"></script>
+		<script src="vendor/rating/raty-custom.js"></script>
+
+
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
